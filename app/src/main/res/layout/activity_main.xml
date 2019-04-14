@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity"
+    android:orientation="vertical"
+    android:background="#FFFFCC00"
+    >
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_jml_siswa"
+            android:layout_centerHorizontal="true"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="bottom"
+            android:text="Jumlah Siswa"
+            android:textSize="26sp"
+            android:textColor="#FFFF6600"
+            />
+
+        <TextView
+            android:id="@+id/tv_jml_guru"
+            android:layout_centerHorizontal="true"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/et_jml_siswa"
+            android:layout_marginBottom="2dp"
+            android:gravity="bottom"
+            android:text="Jumlah Guru"
+            android:textSize="28sp"
+            android:textColor="#FFFF6600"
+            />
+
+        <TextView
+            android:id="@+id/tv_nama_sekolah"
+            android:layout_centerHorizontal="true"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/et_jml_guru"
+            android:layout_marginBottom="4dp"
+            android:gravity="bottom"
+            android:text="Nama Sekolah"
+            android:textSize="28sp"
+            android:textColor="#FFFF6600"
+            />
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/et_nama_sekolah"
+            android:layout_marginBottom="4dp"
+            android:gravity="bottom"
+            android:text="alamat Sekolah"
+            android:textSize="28sp"
+            android:textColor="#FFFF6600"
+            />
+
+        <EditText
+            android:id="@+id/et_jml_siswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jml_siswa"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/et_jml_guru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jml_guru"
+            android:textSize="26sp" />
+        <EditText
+            android:id="@+id/et_nama_sekolah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nama_sekolah"
+            android:textSize="26sp" />
+        <EditText
+            android:id="@+id/et_alamat_sekolah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alamat"
+            android:textSize="26sp" />
+        <Button
+            android:id="@+id/btn_tambahkan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TAMBAHKAN"
+            android:layout_below="@id/et_alamat_sekolah"
+            android:textColor="#FFFF6600"
+            />
+        <Button
+            android:id="@+id/btn_lihat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIHAT DATA"
+            android:layout_below="@+id/btn_tambahkan"
+            android:textColor="#FFFF6600"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
